@@ -1,0 +1,16 @@
+Sarah: Good morning team. Let's begin our Sprint 14 Planning meeting. Today we need to address backend database latency, finalize the responsive UI components, and establish our deployment deadlines.
+Alex: Over the weekend I profiled the API endpoints. The queries on the meeting history table take over 450 milliseconds due to missing indexes.
+Michael: On the frontend side, I finished connecting the Vite dev server with Tailwind CSS. The design system uses purple primary tones and teal accents, and the component hierarchy is ready for review.
+Sarah: That's great progress Michael. Now, regarding the database performance issue, Alex proposed migrating to PostgreSQL, while Elena suggested indexing the existing SQLite database first.
+Elena: Right, adding composite indexes on meeting date and user ID will reduce latency below 20 milliseconds without needing database migration.
+Sarah: We have decided that we will keep SQLite and add composite indexes to resolve the latency issue.
+Alex: Sounds like a solid plan. I will implement the database indexing and query optimizations by Friday.
+Sarah: Perfect. Michael, what are the next frontend deliverables?
+Michael: I need to build the interactive analytics charts and the PDF export module.
+Sarah: Michael is to complete the PDF and CSV export functionality before next Monday.
+Michael: Understood, I'll have the export workflows tested and merged before next Monday morning.
+Elena: What about integration testing and automated regression suites?
+Sarah: Elena will configure the Cypress end-to-end tests by Wednesday.
+Elena: I will set up the test suites and pipeline by Wednesday afternoon.
+Sarah: One pending issue: we still need to determine whether the server will be packaged as a single Docker container or multi-container setup. That is tabled for next meeting.
+Alex: Agreed. Thanks everyone, let's have a productive sprint.

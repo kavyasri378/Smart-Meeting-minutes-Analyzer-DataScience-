@@ -1,0 +1,15 @@
+Prof. Aris Thorne: Welcome David, Priya, and Marcus. Let's review the current status of your Smart Meeting Minutes Analyzer project.
+David Kumar: Thank you Professor. We have integrated our TF-IDF extractive summarization engine and verified that it outperforms baseline frequency summarization on sample transcripts.
+Priya Patel: The preprocessing pipeline cleans punctuation, tokenizes sentences, and handles abbreviations accurately. We are also extracting key decisions using deterministic pattern matching.
+Prof. Aris Thorne: The approach is explainable and avoids black-box hallucinations. How are you evaluating accuracy?
+Priya Patel: We compared the generated summaries against human reference summaries using ROUGE-1 and ROUGE-2 metrics.
+Marcus Vance: I designed the user interface with React. The user can view the summary, action items table, and export formatted minutes.
+Prof. Aris Thorne: We have agreed that your team will present the project at the Departmental Demo Day.
+David Kumar: That is exciting news. We will make sure the live demo is completely polished.
+Prof. Aris Thorne: David will submit the final project report and code documentation by Friday.
+David Kumar: Yes Professor, I will upload the documentation to the academic portal by Friday.
+Priya Patel: Someone needs to prepare the benchmark comparison charts.
+Prof. Aris Thorne: Make sure the charts clearly illustrate the compression ratio. Due date is not specified for that sub-task yet, but do it before the final presentation.
+Marcus Vance: I will refine the mobile responsiveness before tomorrow evening.
+David Kumar: We also have an open question regarding cloud hosting credits for the department server, pending approval from the lab coordinator.
+Prof. Aris Thorne: Good job team, keep up the disciplined work.
