@@ -10,7 +10,7 @@ cd /d "%~dp0"
 REM Step 1: Check Backend Virtual Environment
 if not exist "backend\venv\Scripts\python.exe" (
     echo [Setup] Backend virtual environment not found. Creating backend\venv ...
-    python -m venv backend\venv
+    py -3.12 -m venv backend\venv 2>nul || python -m venv backend\venv
     echo [Setup] Installing backend dependencies ...
     .\backend\venv\Scripts\pip.exe install -r backend\requirements.txt
 )
@@ -24,7 +24,7 @@ if not exist "frontend\node_modules" (
 )
 
 echo Starting FastAPI Backend on http://127.0.0.1:8000 ...
-start "MinuteFlow Backend API" cmd /k "cd /d "%~dp0backend" && .\venv\Scripts\uvicorn.exe main:app --host 127.0.0.1 --port 8000 --reload"
+start "MinuteFlow Backend API" cmd /k "cd /d "%~dp0backend" && .\venv\Scripts\uvicorn.exe main:app --host 0.0.0.0 --port 8000 --reload"
 
 timeout /t 3 /nobreak >nul
 
